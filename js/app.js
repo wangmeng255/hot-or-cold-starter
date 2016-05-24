@@ -18,7 +18,7 @@ $(document).ready(function(){
   		newGame();
   	});
 
-  	$("#guessButton").click(function() {
+  	$("#guessButton").submit(function() {
   		var guess = parseInt($("#userGuess").val());
   		console.log(guess);
   		if(!guess || (guess<1 && guess>100)) alert("Please input an integer between 1 and 100!");
